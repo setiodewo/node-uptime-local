@@ -12,7 +12,7 @@ This project is intended to record the uptime and resources usage of a server in
 
 # Instalation
 
-### MySQL
+### 1. MySQL
 
 To install mysql in Ubuntu:
 
@@ -32,15 +32,19 @@ Don't forget to restart MySQL:
 
 Note: disabling ONLY_FULL_GROUP is needed in order to run query in Grafana
 
-### NodeJS
+### 2. NodeJS
+
+To install nodejs in Ubuntu:
 
 `sudo apt install nodejs`
 
-### Install Git
+### 3. Install Git
+
+To install git in Ubuntu:
 
 `sudo apt install git`
 
-### Install Grafana
+### 4. Install Grafana
 
 To install Grafana, follow the instruction from this source:
 
