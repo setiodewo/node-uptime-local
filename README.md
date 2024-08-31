@@ -85,6 +85,8 @@ sudo mysql
 source structure.sql
 ```
 
+In `structure.sql` we also create username and password for this project in order to access database.
+
 Install dependencies:
 
 ```
