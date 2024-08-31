@@ -144,6 +144,14 @@ from uptime.res
 group by 1
 ```
 
-10. Arrange all visualization as you want.
+10. Arrange all visualizations as you want.
 
-11. Set time filter to `Last 6 hours` and auto refresh the dashboard every `1 minute`.
+11. Set time filter in dashboard to `Last 6 hours` and auto refresh the dashboard every `1 minute`.
+
+# What's next?
+
+1. Monitoring servers centralized.
+
+2. Monitoring resources' threshhold.
+
+3. Alert when resources' measurements are exceeding threshhold.
