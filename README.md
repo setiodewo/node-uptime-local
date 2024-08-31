@@ -85,7 +85,9 @@ sudo mysql
 source structure.sql
 ```
 
-In `structure.sql` we also create username and password for this project in order to access database.
+In `structure.sql` we also create username and password for this project in order to access database. You can alter the database name, username and password in this file as you want.
+
+We use `caching_sha2_password` for mysql user authentication since mysql_native_password plugin is disabled in newer version of MySQL.
 
 Install dependencies:
 
