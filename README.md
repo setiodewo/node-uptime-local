@@ -1,6 +1,8 @@
 # node-uptime-local
 
-This project is intended to record the uptime and resources usage of a server in local database and display it in Grafana. I have created another project to centralized monitoring of uptime and resources of some servers. But with this simple project you will get the idea of how it works.
+This project is intended to record the uptime and resources usage of a server in local database and display it in Grafana. 
+
+I have created another project to centralized monitoring of uptime and resources of remote servers. But with this simple project you will get the idea of how it works.
 
 # Dependencies
 
@@ -16,7 +18,9 @@ This project is intended to record the uptime and resources usage of a server in
 
 To install mysql in Ubuntu:
 
-`sudo apt install mysql-server`
+```
+sudo apt install mysql-server
+```
 
 Disable ONLY_FULL_GROUP in sql_mode:
 
