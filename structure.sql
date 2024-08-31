@@ -1,3 +1,5 @@
+# 31/08/2024
+
 CREATE DATABASE uptime;
 USE uptime;
 
