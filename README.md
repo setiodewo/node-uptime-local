@@ -58,9 +58,10 @@ Enter the folder:
 
 Find structure.sql and execute in mysql:
 
-`sudo mysql`
-
-`source structure.sql`
+```
+sudo mysql
+source structure.sql
+```
 
 Install dependencies:
 
