@@ -12,14 +12,17 @@ This project is intended to record the uptime and resources usage of a server in
 
 # Instalation
 
-## MySQL
+### MySQL
+
+To install mysql in Ubuntu:
+
 `sudo apt install mysql-server`
 
 Disable ONLY_FULL_GROUP in sql_mode:
 
 `SET GLOBAL sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));`
 
-Set to persistent:
+Set the change to persistent:
 
 `SET PERSIST sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));`
 
@@ -27,17 +30,17 @@ Don't forget to restart MySQL:
 
 `sudo systemctl restart mysql`
 
-Note: disabling ONLY_FULL_GROUP is need in order to run query in Grafana
+Note: disabling ONLY_FULL_GROUP is needed in order to run query in Grafana
 
-## NodeJS
+### NodeJS
 
 `sudo apt install nodejs`
 
-## Install Git
+### Install Git
 
 `sudo apt install git`
 
-## Install Grafana
+### Install Grafana
 
 To install Grafana, follow the instruction from this source:
 
@@ -137,3 +140,5 @@ group by 1
 ```
 
 10. Arrange all visualization as you want.
+
+11. Set time filter to `Last 6 hours` and auto refresh the dashboard every `1 minute`.
