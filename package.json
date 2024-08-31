@@ -1,0 +1,16 @@
+{
+  "name": "node-uptime-local",
+  "version": "1.0.0",
+  "description": "Monitoring uptime & resources",
+  "main": "uptime.js",
+  "type" : "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Emanuel Setio Dewo",
+  "license": "ISC",
+  "dependencies": {
+    "check-disk-space": "^3.4.0",
+    "mysql2": "^3.11.0"
+  }
+}
