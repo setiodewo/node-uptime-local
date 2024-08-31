@@ -4,6 +4,7 @@ This project is intended to record the uptime and resources usage of a Ubuntu se
 
 I have created another project to centralized monitoring of uptime and resources of remote servers. But with this simple project you will get the idea of how it works.
 
+
 # Dependencies
 
 1. Ubuntu Linux
@@ -12,7 +13,8 @@ I have created another project to centralized monitoring of uptime and resources
 4. NodeJS with mysql2, check-disk-space
 5. Grafana
 
-# Instalation
+
+# Installation
 
 ### 1. MySQL
 
@@ -64,6 +66,7 @@ To install Grafana, follow the instruction from this source:
 
 https://grafana.com/docs/grafana/latest/setup-grafana/installation/
 
+
 # Install node-uptime-local
 
 Clone repository:
@@ -101,6 +104,7 @@ Try run the script and check if there are any error messages:
 node uptime.js
 ```
 
+
 # Create Cronjob
 
 Go to /etc/cron.d :
@@ -122,6 +126,7 @@ Paste this line:
 ```
 
 Save with `Ctrl+O`. Exit with `Ctrl+X`.
+
 
 # Setup in Grafana
 
@@ -179,6 +184,7 @@ group by 1
 10. Arrange all visualizations as you want.
 
 11. Set time filter in dashboard to `Last 6 hours` and auto refresh the dashboard every `1 minute`.
+
 
 # What's next?
 
