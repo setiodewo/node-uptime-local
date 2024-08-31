@@ -24,15 +24,21 @@ sudo apt install mysql-server
 
 Disable ONLY_FULL_GROUP in sql_mode:
 
-`SET GLOBAL sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));`
+```
+SET GLOBAL sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));
+```
 
 Set the change to persistent:
 
-`SET PERSIST sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));`
+```
+SET PERSIST sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));
+```
 
 Don't forget to restart MySQL:
 
-`sudo systemctl restart mysql`
+```
+sudo systemctl restart mysql
+```
 
 Note: disabling ONLY_FULL_GROUP is needed in order to run query in Grafana
 
@@ -40,13 +46,17 @@ Note: disabling ONLY_FULL_GROUP is needed in order to run query in Grafana
 
 To install nodejs in Ubuntu:
 
-`sudo apt install nodejs`
+```
+sudo apt install nodejs
+```
 
 ### 3. Install Git
 
 To install git in Ubuntu:
 
-`sudo apt install git`
+```
+sudo apt install git
+```
 
 ### 4. Install Grafana
 
@@ -58,11 +68,15 @@ https://grafana.com/docs/grafana/latest/setup-grafana/installation/
 
 Clone repository:
 
-`git clone git@github.com:setiodewo/node-uptime-local`
+```
+git clone git@github.com:setiodewo/node-uptime-local
+```
 
 Enter the folder:
 
-`cd node-uptime-local`
+```
+cd node-uptime-local
+```
 
 Find structure.sql and execute in mysql:
 
@@ -73,25 +87,35 @@ source structure.sql
 
 Install dependencies:
 
-`npm install`
+```
+npm install
+```
 
 Try run the script and check if there are any error messages:
 
-`node uptime.js`
+```
+node uptime.js
+```
 
 # Create Cronjob
 
 Go to /etc/cron.d :
 
-`cd /etc/cron.d`
+```
+cd /etc/cron.d
+```
 
 Create a file:
 
-`sudo nano uptime`
+```
+sudo nano uptime
+```
 
 Paste this line:
 
-`* *     * * *   dewo    node /home/dewo/projects/node-uptime-local/uptime.js >/dev/null 2>&1`
+```
+* *     * * *   dewo    node /home/dewo/projects/node-uptime-local/uptime.js >/dev/null 2>&1
+```
 
 Save with `Ctrl+O`. Exit with `Ctrl+X`.
 
