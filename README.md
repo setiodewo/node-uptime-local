@@ -150,7 +150,7 @@ group by 1
 
 # What's next?
 
-1. Monitoring servers centralized.
+1. Monitoring remote servers centralized.
 
 2. Monitoring resources' threshhold.
 
