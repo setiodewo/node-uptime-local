@@ -1,6 +1,6 @@
 # node-uptime-local
 
-This project is intended to record the uptime and resources usage of a server in local database and display it in Grafana. 
+This project is intended to record the uptime and resources usage of a Ubuntu server in local database and display it in Grafana. 
 
 I have created another project to centralized monitoring of uptime and resources of remote servers. But with this simple project you will get the idea of how it works.
 
