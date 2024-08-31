@@ -4,7 +4,7 @@ This project is intended to record the uptime and resources usage of a Ubuntu se
 
 I have created another project to centralized monitoring of uptime and resources of remote servers. But with this simple project you will get the idea of how it works.
 
-![Screenshot](./node-uptime-local/screenshot1.png)
+![Screenshot](./screenshot1.png)
 
 
 # Dependencies
