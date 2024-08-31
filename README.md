@@ -1,6 +1,8 @@
 # node-uptime-local
 
-## Dependencies
+This project is intended to record the uptime and resources usage of a server in local database. I have created another project to centralized monitoring of uptime and resources of some servers. But with this project you will get the idea of how it works.
+
+# Dependencies
 
 1. Ubuntu Linux
 2. MySQL
@@ -8,9 +10,9 @@
 4. NodeJS with mysql2, check-disk-space
 5. Grafana
 
-## Instalation
+# Instalation
 
-### MySQL
+## MySQL
 `sudo apt install mysql-server`
 
 Disable ONLY_FULL_GROUP in sql_mode:
@@ -27,15 +29,15 @@ Don't forget to restart MySQL:
 
 Note: disabling ONLY_FULL_GROUP is need in order to run query in Grafana
 
-### NodeJS
+## NodeJS
 
 `sudo apt install nodejs`
 
-### Install Git
+## Install Git
 
 `sudo apt install git`
 
-## Install node-uptime-local
+# Install node-uptime-local
 
 Clone repository:
 
@@ -59,7 +61,7 @@ Try run the script and check if there are any error messages:
 
 `node uptime.js`
 
-## Create Cronjob
+# Create Cronjob
 
 Go to /etc/cron.d :
 
