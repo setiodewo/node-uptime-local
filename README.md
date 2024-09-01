@@ -183,9 +183,17 @@ from uptime.res
 group by 1
 ```
 
-10. Arrange all visualizations as you want.
+10. Create 6th visualization. Named it as `Threshhold`. Set the chart as Bar Gauge. Enter this code in query editor:
+```
+select date_format(timestamp, '%d/%m/%Y %H:%i --') as 'Time', value_cpu as 'CPU', value_memory as 'Memory', value_storage as 'Storage'
+from uptime.ambang
+where $__timeFilter(timestamp)
+order by id desc limit 1
+```
 
-11. Set time filter in dashboard to `Last 6 hours` and auto refresh the dashboard every `1 minute`.
+11. Arrange all visualizations as you want.
+
+12. Set time filter in dashboard to `Last 6 hours` and auto refresh the dashboard every `1 minute`.
 
 
 # What's next?
