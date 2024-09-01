@@ -200,6 +200,4 @@ order by id desc limit 1
 
 1. Monitoring remote servers centralized.
 
-2. Monitoring resources' threshhold.
-
-3. Alert when resources' measurements are exceeding threshhold.
+2. Alert when resources' measurements are exceeding threshhold.
